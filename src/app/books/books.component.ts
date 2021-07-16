@@ -6,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./books.component.scss']
 })
 export class BooksComponent implements OnInit {
-  imageUrl:any;
+  colspan:number
   constructor() { }
 
   ngOnInit() {
-    this.imageUrl="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png";
+    this.colspan=3;
   }
 
 }
