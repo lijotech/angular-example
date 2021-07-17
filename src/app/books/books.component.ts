@@ -6,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./books.component.scss']
 })
 export class BooksComponent implements OnInit {
-  colspan:number
+  isActive:boolean
   constructor() { }
 
   ngOnInit() {
-    this.colspan=3;
+    this.isActive=true;
   }
 
 }
