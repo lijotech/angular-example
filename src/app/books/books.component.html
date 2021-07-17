@@ -1,9 +1,9 @@
 
 
 
-<h3>Style Binding</h3>
+<h3>Event Binding</h3>
 
-<button [style.backgroundColor]="isActive? 'blue':'grey'">Save</button>
+<button (click)="onSave($event)">Save</button>
 
 
 

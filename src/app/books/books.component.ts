@@ -6,11 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./books.component.scss']
 })
 export class BooksComponent implements OnInit {
-  isActive:boolean
   constructor() { }
-
   ngOnInit() {
-    this.isActive=true;
+  }
+  onSave(event) {
+    console.log('Button Clicked',event);
+    event.stopPropagation();
   }
 
 }
