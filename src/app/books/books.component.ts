@@ -6,12 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./books.component.scss']
 })
 export class BooksComponent implements OnInit {
+  email="me@example.com"
   constructor() { }
   ngOnInit() {
+
   }
-  onSave(event) {
-    console.log('Button Clicked',event);
-    event.stopPropagation();
+  onKeyUp()
+  {
+    console.log('Email changed:',this.email);
   }
 
 }
